@@ -1,0 +1,12 @@
+.resource-product-list {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+@media (max-width: 1900px) {
+  .resource-product-list {
+    padding: 0 30px;
+  }
+}

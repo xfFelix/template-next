@@ -1,0 +1,25 @@
+.account-page {
+  max-height: calc(100vh - 48px);
+  padding: 24px;
+  overflow: auto;
+}
+
+.title {
+  padding-bottom: 24px;
+  color: #191919ff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.table {
+  :global(.ant-table-content) {
+
+      .ant-table-thead {
+        .ant-table-cell {
+          background: #f5f6faff;
+        }
+      }
+
+  }
+}

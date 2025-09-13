@@ -1,0 +1,52 @@
+.business-modal {
+  position: relative;
+
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/a887d1d5158b489c8a04f8179c4c3690.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 130px;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 56px;
+
+    .header {
+      width: 332px;
+      padding: 36px 0 32px;
+
+      .title {
+        color: #191919;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+      }
+    }
+
+    .content {
+      box-sizing: border-box;
+      width: 188px;
+      height: 188px;
+      padding: 8px;
+      background: #ffff;
+      border: 1px solid #a4acbc4d;
+      border-radius: 12px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

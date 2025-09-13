@@ -1,0 +1,17 @@
+.form-wrapper {
+  :global(.ant-form-inline) {
+    gap: 24px 40px;
+
+    .ant-form-item-inline {
+      margin-right: 0;
+
+      .ant-form-item-label {
+        label {
+          color: rgba(25, 25, 25, 100%);
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

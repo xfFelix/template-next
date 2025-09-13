@@ -1,0 +1,28 @@
+.resource-procurement-modal {
+  position: relative;
+
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/a887d1d5158b489c8a04f8179c4c3690.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 130px;
+  }
+
+  .modal-content {
+    position: relative;
+    width: 416px;
+
+    .title {
+      padding-top: 36px;
+      color: #191919;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}

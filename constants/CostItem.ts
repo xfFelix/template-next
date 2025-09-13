@@ -1,0 +1,34 @@
+enum CostItem {
+  /** 专业版数字人 */
+  VIRTUAL_MAN_TRAIN = 'virtualmanTrain',
+  /** 极速版数字人 */
+  FAST_VIRTUAL_MAN_TRAIN = 'fastVirtualmanTrain',
+  /** 图生数字人克隆 */
+  IMAGE_VIRTUAL_MAN_TRAIN = 'imageVirtualmanTrain',
+  /** 声音克隆：V1 */
+  VOICE_REPRODUCE_V1 = 'voiceReproduceV1',
+  /** 声音克隆：V2 */
+  VOICE_REPRODUCE_V2 = 'voiceReproduceV2',
+  /** 声音克隆：V3 */
+  VOICE_REPRODUCE_V3 = 'voiceReproduceV3',
+  /** 声音克隆：S1 */
+  VOICE_REPRODUCE_S1 = 'voiceReproduceS1',
+  /** 视频合成：数字人口播视频（无包装） */
+  VIRTUAL_MAN_VIDEO_GENERATE = 'virtualmanVideoGenerate',
+  /** 视频合成：智能剪辑视频，已删除 */
+  AGENT_VIDEO_GENERATE = 'agentVideoGenerate',
+  /** 视频合成：数字人口播混剪视频 */
+  VIRTUAL_MAN_BROADCAST_VIDEO_GENERATE = 'virtualmanBroadcastVideoGenerate',
+  /** 视频合成：真人口播混剪视频 */
+  REAL_MAN_BROADCAST_VIDEO_GENERATE = 'realmanBroadcastVideoGenerate',
+  /** 视频合成：新闻体视频 */
+  NEWS_STYLE_VIDEO_GENERATE = 'newsMixClipVideoGenerate',
+  /** 视频合成：素材混剪视频 */
+  MATERIAL_MIXED_CUT_VIDEO_GENERATE = 'materialMixClipVideoGenerate',
+  /** 视频合成：ASR */
+  ASR = 'asr',
+  /** 视频合成：视频模板 */
+  VIDEO_STYLE = 'videoStyle',
+}
+
+export default CostItem;

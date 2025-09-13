@@ -1,0 +1,145 @@
+.api-container {
+  min-width: 700px;
+  max-height: calc(100vh - 48px);
+  padding: 24px;
+  overflow: auto;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+
+      .title {
+        color: rgba(25, 25, 25, 100%);
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'PingFang SC';
+        line-height: 20px;
+      }
+
+      .tip {
+        color: rgba(99, 102, 109, 100%);
+        font-weight: 400;
+        font-size: 13px;
+        font-family: 'PingFang SC';
+      }
+    }
+  }
+
+  .create-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 22px;
+    color: rgba(255, 255, 255, 100%);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'PingFang SC';
+    line-height: 20px;
+    column-gap: 7px;
+    background: rgba(25, 25, 25, 100%);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(49, 49, 51, 100%);
+    }
+
+    &:active {
+      background-color: rgba(18, 18, 18, 100%);
+    }
+
+    .add {
+      display: flex;
+      align-items: center;
+      padding-bottom: 3px;
+      font-size: 18px;
+    }
+  }
+
+  &-alert {
+    width: max-content;
+
+    .alert-content {
+      display: flex;
+      align-items: center;
+      width: auto;
+      column-gap: 10px;
+
+      .btn {
+        padding: 6px 12px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'PingFang SC';
+        line-height: 12px;
+        background: rgba(22, 93, 255, 100%);
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(64, 128, 255, 100%);
+        }
+
+        &:active {
+          background: rgba(14, 66, 210, 100%);
+        }
+      }
+    }
+  }
+
+  &-table {
+    margin-top: 24px;
+
+    .options {
+      display: flex;
+      align-items: center;
+    }
+
+    .link {
+      color: rgba(65, 131, 237, 100%);
+      cursor: pointer;
+    }
+
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 64px 0;
+    }
+
+    .nowrap {
+      width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+
+      :global(:where(
+          .css-dev-only-do-not-override-1a4zb9b
+        ).ant-switch.ant-switch-checked) {
+        background: rgba(25, 209, 121, 100%);
+      }
+
+      :global(:where(.css-dev-only-do-not-override-1a4zb9b).ant-table-wrapper table) {
+        border-radius: 12px;
+      }
+
+      :global(:where(
+          .css-dev-only-do-not-override-1a4zb9b
+        ).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled)) {
+        background: rgba(25, 209, 121, 100%);
+      }
+
+  }
+}

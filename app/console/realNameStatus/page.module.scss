@@ -1,0 +1,39 @@
+.real-name-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .common {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+    }
+
+    .title {
+      height: 22px;
+      margin: 24px auto 20px;
+      color: rgba(0, 0, 0, 100%);
+      font-weight: 600;
+      font-size: 22px;
+      font-family: 'PingFang SC';
+      line-height: 22px;
+    }
+
+    .desc {
+      color: rgba(99, 102, 109, 100%);
+      font-weight: 400;
+      font-size: 16px;
+      font-family: 'PingFang SC';
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.real-name-modal {
+  box-sizing: border-box;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+
+  .tipBox {
+    height: 130px;
+    padding: 0 24px;
+    background: linear-gradient(
+      180deg,
+      rgba(213, 240, 255, 100%) 0%,
+      rgba(255, 255, 255, 100%) 100%
+    );
+
+    .title {
+      padding: 40px 0 12px;
+      color: rgba(36, 37, 38, 100%);
+      font-weight: 600;
+      font-size: 20px;
+      font-family: 'PingFang SC';
+      line-height: 20px;
+    }
+
+    .content {
+      color: rgba(120, 125, 133, 100%);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+      line-height: 22px;
+
+      .desc {
+        color: rgba(25, 25, 25, 100%);
+      }
+    }
+  }
+
+  .option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    padding: 0 24px;
+    column-gap: 8px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 205px;
+      height: 204px;
+      padding: 24px 16px;
+      overflow: hidden;
+      border-radius: 12px;
+
+      &:first-child {
+        background: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/cfecc221528c453eb8e1eb1292f52cd1.png');
+        background-size: 100% 100%;
+      }
+
+      &:last-child {
+        background: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/fc63ed117ca84b7dae51d1d4708ecf6b.png');
+        background-size: 100% 100%;
+      }
+
+      .title {
+        color: rgba(25, 25, 25, 100%);
+        font-weight: 600;
+        font-size: 16px;
+        font-family: 'PingFang SC';
+        line-height: 16px;
+      }
+
+      .desc {
+        margin-top: 12px;
+        color: rgba(99, 102, 109, 100%);
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'PingFang SC';
+        line-height: 12px;
+
+        span {
+          display: block;
+          margin-top: 8px;
+        }
+      }
+
+      .btn {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        padding: 13px 16px;
+        font-size: 13px;
+        font-family: 'PingFang SC';
+        line-height: 13px;
+        border-radius: 23px;
+        cursor: pointer;
+      }
+    }
+  }
+}

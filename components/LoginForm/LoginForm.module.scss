@@ -1,0 +1,36 @@
+.form {
+  .btn,
+  .btn-auth {
+    box-sizing: border-box;
+    width: 100%;
+    width: 318px;
+    height: 48px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    span {
+      padding: 0 5px 2px;
+    }
+  }
+
+  .btn-auth {
+    color: #000;
+    background: #fff;
+    border: 1px solid rgba(164, 172, 188, 30%);
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px !important;
+  }
+
+  .agreement {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  :global(:where(.css-dev-only-do-not-override-qc9f89).ant-form-item
+      .ant-form-item-explain-error) {
+      margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,38 @@
+.resource-state-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 24px;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 4px;
+
+  &.enable {
+    color: #05b360;
+    background: #19d1791f;
+  }
+
+  &.expired {
+    color: #787d85;
+    background: #eef0f4;
+  }
+
+  &.pending {
+    color: #ffa113;
+    background: #fdf5ea;
+  }
+
+  &.frozen {
+    color: #4183ed;
+    background: #f0f5ff;
+  }
+
+  &.canceled {
+    color: #f26364;
+    background: #feeeee;
+  }
+}

@@ -1,0 +1,39 @@
+.cascader-popup-wrapper {
+  :global(.ant-cascader-menus) {
+    ::-webkit-scrollbar {
+      width: 0; /* 垂直滚动条宽度 */
+    }
+  }
+
+  :global(.ant-cascader-menu-item) {
+    :global(.ant-cascader-menu-item-expand-icon) {
+      color: inherit !important;
+      line-height: 1;
+    }
+
+    &:global(.ant-cascader-menu-item-expand) {
+      align-items: baseline;
+    }
+
+    // 选中
+    &:global(.ant-cascader-menu-item-active) {
+      &:global(:not(.ant-cascader-menu-item-expand)) {
+        position: relative;
+        padding-right: 38px;
+
+        &:global(::before) {
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          width: 16px;
+          height: 16px;
+          background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/af71d3f1953f4c538b5b17c8067539e2.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          transform: translateY(-50%);
+          content: '';
+        }
+      }
+    }
+  }
+}

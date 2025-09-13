@@ -1,0 +1,49 @@
+.create-api-key-modal {
+  box-sizing: border-box;
+  width: 448px;
+  height: 262px;
+  padding: 36px 48px 32px;
+
+  .title {
+    color: rgba(29, 33, 41, 100%);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'PingFang SC';
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .desc {
+    margin: 5px 0 24px;
+    color: rgba(120, 125, 133, 100%);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'PingFang SC';
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .text {
+    height: 48px;
+  }
+
+  .btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+
+    .common-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 40px;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+
+  .logoImg {
+    height: 24px;
+    object-fit: cover;
+  }
+
+  .divide {
+    width: 1px;
+    height: 14px;
+    margin: 0 5px;
+    background: rgba(164, 172, 188, 30%);
+  }
+
+  .text {
+    color: rgba(25, 25, 25, 100%);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'PingFang SC';
+    line-height: 16px;
+  }
+}

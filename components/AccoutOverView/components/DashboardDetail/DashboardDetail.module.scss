@@ -1,0 +1,143 @@
+.dashboard-detail {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 1fr 1fr;
+
+  .resource-card,
+  .power-card {
+    padding: 0 24px;
+    background-size: 100% 100%;
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+
+      .card-title {
+        position: relative;
+        color: #191919ff;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+
+        span {
+          position: relative;
+        }
+
+        .ribbon-background {
+          position: absolute;
+          top: 8px;
+          left: 50%;
+          z-index: 0;
+          width: 78px;
+          height: 17px;
+          background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/1ff9e1a052c24e8c86570e397f8fea46.png');
+          background-size: 100% 100%;
+          translate: -50% 0;
+        }
+      }
+
+      .recharge-btn {
+        gap: 6px;
+        height: 32px;
+        padding: 0 8px 0 16px;
+        font-size: 13px;
+        border-radius: 23px;
+
+        .btn-text {
+          position: relative;
+          top: -1px;
+        }
+
+        :global(.iconfont) {
+          position: relative;
+          top: 0.5px;
+        }
+      }
+    }
+
+    .card-content {
+      display: grid;
+      padding: 30px 0 68px;
+
+      .item {
+        .item-name {
+          padding-bottom: 16px;
+          color: #63666dff;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+        }
+
+        .item-content {
+          display: flex;
+          height: 28px;
+          color: #191919ff;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+
+          &.num {
+            font-weight: 700;
+            font-size: 28px;
+            font-family: 'Douyin Sans';
+          }
+
+          .tag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 84px;
+            height: 28px;
+            color: #191919;
+            font-weight: 500;
+            font-size: 14px;
+            background: #ffffff80;
+            border: 1px solid #fffc;
+            border-radius: 40px;
+            box-shadow: 0 4px 12px #0000001a;
+
+            &.official-tag {
+              background: linear-gradient(90deg, #00ff6380 50%, #00ffc280 100%);
+            }
+
+            span {
+              position: relative;
+              top: -0.5px;
+            }
+          }
+
+          .btn {
+            color: #4183ed;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            line-height: 28px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .resource-card {
+    .card-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-right: 122px;
+    }
+  }
+
+  .power-card {
+    .card-content {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-right: 122px;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .dashboard-detail {
+    grid-template-columns: 1fr;
+  }
+}

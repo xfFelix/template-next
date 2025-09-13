@@ -1,0 +1,13 @@
+.custom-modal {
+  top: 50%;
+  translate: 0 -50%;
+
+  :global(.ant-modal-content) {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  :global(.ant-modal-footer) {
+    display: none;
+  }
+}

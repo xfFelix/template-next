@@ -1,0 +1,112 @@
+.personal-real-name-modal {
+  padding: 36px 40px 32px;
+
+  .title {
+    color: rgba(29, 33, 41, 100%);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'PingFang SC';
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .form {
+    .desc {
+      margin: 5px 0 24px;
+      color: rgba(120, 125, 133, 100%);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+      line-height: 22px;
+      text-align: center;
+    }
+
+    .text {
+      height: 40px;
+    }
+
+    .form-label {
+      color: rgba(25, 25, 25, 100%);
+      font-weight: 500;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+      line-height: 14px;
+    }
+
+    .btnBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+
+      .confirm-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 48px;
+        font-size: 14px;
+        font-family: 'PingFang SC';
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .agreementCheckbox {
+      display: flex;
+      align-self: start;
+      color: rgba(120, 125, 133, 100%);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: 'PingFang SC';
+      line-height: 18px;
+      text-align: left;
+    }
+
+    .checkbox {
+      span:first-child {
+        align-self: start;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  .check {
+    .text {
+      color: rgba(120, 125, 133, 100%);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+      line-height: 22px;
+      text-align: center;
+
+      &:first-child {
+        margin-top: 15px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 260px;
+      height: 48px;
+      margin-top: 24px;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+  }
+
+  :global(.check-tip-from-error) {
+
+      position: relative !important;
+
+      .ant-form-item-explain-error {
+        position: absolute;
+        top: -8px;
+        left: 12%;
+        transform: translate(-50%, -50%);
+      }
+
+  }
+}

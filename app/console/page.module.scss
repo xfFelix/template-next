@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+
+  .content {
+    box-sizing: border-box;
+    flex: 1;
+  }
+}
