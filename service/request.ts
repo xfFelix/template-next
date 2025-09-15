@@ -1,9 +1,7 @@
 // utils/axios.ts
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-import { notification } from 'antd';
 import { redirect } from 'next/navigation';
 import { getToken, logout } from '@/utils/login';
-import { ErrorCodeMap } from '@/constants/ErrorCode';
 import { LogoutCodeList } from '@/constants/Router';
 
 console.log(process.env.CONTEXT_ENV);
@@ -17,7 +15,9 @@ const obj = {
 
 // 创建实例
 const service: AxiosInstance = axios.create({
-  baseURL: obj[process.env.CONTEXT_ENV as keyof typeof obj] || 'https://open-console-api.test.bhbapp.cn', // 环境变量
+  baseURL:
+    obj[process.env.CONTEXT_ENV as keyof typeof obj] ||
+    'https://open-console-api.test.bhbapp.cn', // 环境变量
   timeout: 10000,
 });
 
@@ -58,7 +58,9 @@ service.interceptors.response.use(
       }
       return Promise.reject(response.data);
     }
-    return Promise.reject(new Error(`Error: ${response.config.url}:${response.status}`));
+    return Promise.reject(
+      new Error(`Error: ${response.config.url}:${response.status}`)
+    );
   },
   error => {
     if (error.response?.status === 401) {
