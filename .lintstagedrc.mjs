@@ -5,8 +5,13 @@ const buildEslintCommand = (filenames) =>
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`;
 
-const lintConfig = {
-  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
-};
+const buildStylelintCommand = (filenames) =>
+  `stylelint --fix ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(' --file ')}`;
 
-export default lintConfig;
+
+export default {
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
+  '*.{css,scss}': buildStylelintCommand
+};

@@ -135,7 +135,17 @@ const eslintConfig = [
       'jsx-a11y/no-static-element-interactions': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
-      'react-hooks/exhaustive-deps': 'off'
+      'react-hooks/exhaustive-deps': 'off',
+      'import/no-anonymous-default-export': ['warn', {
+        'allowArray': false,
+        'allowArrowFunction': false,
+        'allowAnonymousClass': false,
+        'allowAnonymousFunction': false,
+        'allowCallExpression': true, // The true value here is for backward compatibility
+        'allowNew': false,
+        'allowLiteral': false,
+        'allowObject': true
+      }]
     }
   }),
   {
