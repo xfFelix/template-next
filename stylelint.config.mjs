@@ -1,6 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-standard-scss'],
+  extends: ['stylelint-config-standard', 'stylelint-config-rational-order', 'stylelint-config-standard-scss', 'stylelint-config-prettier'],
+  plugins: ['stylelint-order'],
   rules: {
     'no-empty-source': null,
     'selector-class-pattern': null,
