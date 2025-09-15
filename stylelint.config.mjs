@@ -1,7 +1,6 @@
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-rational-order', 'stylelint-config-standard-scss', 'stylelint-config-prettier'],
-  plugins: ['stylelint-order'],
+  extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],
   rules: {
     'no-empty-source': null,
     'selector-class-pattern': null,
@@ -15,7 +14,16 @@ export default {
       }
     ],
     'at-rule-no-unknown': null,
-    'font-family-no-missing-generic-family-keyword': null
+    'font-family-no-missing-generic-family-keyword': null,
+    'prettier/prettier': [
+      true,
+      {
+        'singleQuote': true,
+        'tabWidth': 2,
+        'printWidth': 100,
+        'endOfLine': 'auto'
+      }
+    ]
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx']
 };
