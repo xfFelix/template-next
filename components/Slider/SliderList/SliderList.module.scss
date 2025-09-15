@@ -34,7 +34,7 @@
 
       &:hover {
         color: #000;
-        background: rgba(238, 240, 244, 100%);
+        background: rgb(238, 240, 244, 100%);
       }
     }
 
@@ -43,26 +43,26 @@
       height: 1px;
       padding: 0;
       line-height: 2px;
-      background: rgba(164, 172, 188, 30%);
+      background: rgb(164, 172, 188, 30%);
     }
 
     .active {
       color: #000;
       font-weight: 500;
-      background: rgba(230, 233, 239, 100%);
+      background: rgb(230, 233, 239, 100%);
     }
   }
 
   .docBtnBox {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(164, 172, 188, 30%);
+    border-bottom: 1px solid rgb(164, 172, 188, 30%);
 
     .docBtn {
       display: flex;
       align-items: center;
       box-sizing: border-box;
       padding: 16px 0 16px 22px;
-      color: rgba(25, 25, 25, 100%);
+      color: rgb(25, 25, 25, 100%);
       color: #000;
       font-weight: 400;
       font-size: 16px;
@@ -73,11 +73,11 @@
       cursor: pointer;
 
       &:hover {
-        background: rgba(238, 240, 244, 100%);
+        background: rgb(238, 240, 244, 100%);
       }
 
       &:active {
-        background: rgba(230, 233, 239, 100%);
+        background: rgb(230, 233, 239, 100%);
       }
     }
   }

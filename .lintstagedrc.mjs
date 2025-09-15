@@ -8,7 +8,7 @@ const buildEslintCommand = (filenames) =>
 const buildStylelintCommand = (filenames) =>
   `stylelint --fix ${filenames
     .map((f) => path.relative(process.cwd(), f))
-    .join(' --file ')}`;
+    .join(' ')}`;
 
 
 export default {

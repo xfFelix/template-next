@@ -1,27 +1,25 @@
 .select-popup-wrapper {
+  :global(::-webkit-scrollbar) {
+    width: 0; /* 垂直滚动条宽度 */
+  }
 
-    :global(::-webkit-scrollbar){
-      width: 0; /* 垂直滚动条宽度 */
-    }
+  :global(.ant-select-item) {
+    // 选中
+    &.ant-select-item-option-selected {
+      padding-right: 38px;
 
-    :global(.ant-select-item) {
-      // 选中
-      &.ant-select-item-option-selected {
-        padding-right: 38px;
-
-        &::before {
-          position: absolute;
-          top: 50%;
-          right: 12px;
-          width: 16px;
-          height: 16px;
-          background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/af71d3f1953f4c538b5b17c8067539e2.png');
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          transform: translateY(-50%);
-          content: '';
-        }
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        background-image: url('https://bhb-frontend.bhbcdn.com/static/files/mtv/images/af71d3f1953f4c538b5b17c8067539e2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translateY(-50%);
+        content: '';
       }
     }
-
+  }
 }

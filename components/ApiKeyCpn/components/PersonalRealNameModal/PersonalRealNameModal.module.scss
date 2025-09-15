@@ -2,7 +2,7 @@
   padding: 36px 40px 32px;
 
   .title {
-    color: rgba(29, 33, 41, 100%);
+    color: rgb(29, 33, 41, 100%);
     font-weight: 600;
     font-size: 18px;
     font-family: 'PingFang SC';
@@ -13,7 +13,7 @@
   .form {
     .desc {
       margin: 5px 0 24px;
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 14px;
       font-family: 'PingFang SC';
@@ -26,7 +26,7 @@
     }
 
     .form-label {
-      color: rgba(25, 25, 25, 100%);
+      color: rgb(25, 25, 25, 100%);
       font-weight: 500;
       font-size: 14px;
       font-family: 'PingFang SC';
@@ -55,7 +55,7 @@
     .agreementCheckbox {
       display: flex;
       align-self: start;
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 12px;
       font-family: 'PingFang SC';
@@ -73,7 +73,7 @@
 
   .check {
     .text {
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 14px;
       font-family: 'PingFang SC';
@@ -98,15 +98,13 @@
   }
 
   :global(.check-tip-from-error) {
+    position: relative !important;
 
-      position: relative !important;
-
-      .ant-form-item-explain-error {
-        position: absolute;
-        top: -8px;
-        left: 12%;
-        transform: translate(-50%, -50%);
-      }
-
+    .ant-form-item-explain-error {
+      position: absolute;
+      top: -8px;
+      left: 12%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

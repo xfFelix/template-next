@@ -1,18 +1,16 @@
 .radio-wrapper {
   :global(.ant-radio-wrapper) {
+    // 选中
+    &.ant-radio-wrapper-checked {
+      .ant-radio-checked {
+        .ant-radio-inner {
+          background-color: transparent;
 
-      // 选中
-      &.ant-radio-wrapper-checked {
-        .ant-radio-checked {
-          .ant-radio-inner {
-            background-color: transparent;
-
-            &::after {
-              background-color: rgba(5, 179, 96, 100%);
-            }
+          &::after {
+            background-color: rgb(5, 179, 96, 100%);
           }
         }
       }
     }
-
+  }
 }

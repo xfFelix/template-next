@@ -19,47 +19,45 @@
   }
 
   :global(.table-container) {
+    .ant-table-empty {
+      .ant-table-cell {
+        border: none;
+      }
+    }
 
-      .ant-table-empty {
-        .ant-table-cell {
+    .ant-pagination-options {
+      margin-right: 16px;
+
+      .ant-pagination-options-size-changer {
+        .ant-select-selector {
+          background-color: rgb(245, 246, 250, 100%);
           border: none;
         }
       }
 
-      .ant-pagination-options {
-        margin-right: 16px;
-
-        .ant-pagination-options-size-changer {
-          .ant-select-selector {
-            background-color: rgba(245, 246, 250, 100%);
-            border: none;
-          }
-        }
-
-        .ant-pagination-options-quick-jumper {
-          input {
-            background-color: rgba(245, 246, 250, 100%);
-            border: none;
-          }
+      .ant-pagination-options-quick-jumper {
+        input {
+          background-color: rgb(245, 246, 250, 100%);
+          border: none;
         }
       }
     }
+  }
 
-    .empty {
-      margin: 92px 0;
+  .empty {
+    margin: 92px 0;
 
-      .empty-img {
-        width: 86px;
-        height: 86px;
-      }
-
-      .empty-text {
-        margin-top: 16px;
-        color: rgba(149, 153, 160, 100%);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-      }
+    .empty-img {
+      width: 86px;
+      height: 86px;
     }
 
+    .empty-text {
+      margin-top: 16px;
+      color: rgb(149, 153, 160, 100%);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }

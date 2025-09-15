@@ -3,7 +3,7 @@
   padding: 24px;
 
   .title {
-    color: rgba(25, 25, 25, 100%);
+    color: rgb(25, 25, 25, 100%);
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
@@ -28,12 +28,12 @@
     border-radius: 4px;
 
     &.green {
-      color: rgba(5, 179, 96, 100%);
-      background-color: rgba(25, 209, 121, 12%);
+      color: rgb(5, 179, 96, 100%);
+      background-color: rgb(25, 209, 121, 12%);
     }
 
     &.gray {
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       background-color: #eef0f4;
     }
   }

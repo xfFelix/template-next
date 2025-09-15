@@ -17,7 +17,7 @@
       row-gap: 12px;
 
       .title {
-        color: rgba(25, 25, 25, 100%);
+        color: rgb(25, 25, 25, 100%);
         font-weight: 600;
         font-size: 20px;
         font-family: 'PingFang SC';
@@ -25,7 +25,7 @@
       }
 
       .tip {
-        color: rgba(99, 102, 109, 100%);
+        color: rgb(99, 102, 109, 100%);
         font-weight: 400;
         font-size: 13px;
         font-family: 'PingFang SC';
@@ -40,22 +40,22 @@
     box-sizing: border-box;
     height: 40px;
     padding: 10px 22px;
-    color: rgba(255, 255, 255, 100%);
+    color: rgb(255, 255, 255, 100%);
     font-weight: 500;
     font-size: 14px;
     font-family: 'PingFang SC';
     line-height: 20px;
     column-gap: 7px;
-    background: rgba(25, 25, 25, 100%);
+    background: rgb(25, 25, 25, 100%);
     border-radius: 8px;
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(49, 49, 51, 100%);
+      background-color: rgb(49, 49, 51, 100%);
     }
 
     &:active {
-      background-color: rgba(18, 18, 18, 100%);
+      background-color: rgb(18, 18, 18, 100%);
     }
 
     .add {
@@ -82,16 +82,16 @@
         font-size: 12px;
         font-family: 'PingFang SC';
         line-height: 12px;
-        background: rgba(22, 93, 255, 100%);
+        background: rgb(22, 93, 255, 100%);
         border-radius: 4px;
         cursor: pointer;
 
         &:hover {
-          background: rgba(64, 128, 255, 100%);
+          background: rgb(64, 128, 255, 100%);
         }
 
         &:active {
-          background: rgba(14, 66, 210, 100%);
+          background: rgb(14, 66, 210, 100%);
         }
       }
     }
@@ -106,7 +106,7 @@
     }
 
     .link {
-      color: rgba(65, 131, 237, 100%);
+      color: rgb(65, 131, 237, 100%);
       cursor: pointer;
     }
 
@@ -124,22 +124,20 @@
       text-overflow: ellipsis;
     }
 
+    :global(:where(.css-dev-only-do-not-override-1a4zb9b).ant-switch.ant-switch-checked) {
+      background: rgb(25, 209, 121, 100%);
+    }
 
-      :global(:where(
-          .css-dev-only-do-not-override-1a4zb9b
-        ).ant-switch.ant-switch-checked) {
-        background: rgba(25, 209, 121, 100%);
-      }
+    :global(:where(.css-dev-only-do-not-override-1a4zb9b).ant-table-wrapper table) {
+      border-radius: 12px;
+    }
 
-      :global(:where(.css-dev-only-do-not-override-1a4zb9b).ant-table-wrapper table) {
-        border-radius: 12px;
-      }
-
-      :global(:where(
-          .css-dev-only-do-not-override-1a4zb9b
-        ).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled)) {
-        background: rgba(25, 209, 121, 100%);
-      }
-
+    :global(
+      :where(.css-dev-only-do-not-override-1a4zb9b).ant-switch.ant-switch-checked:hover:not(
+          .ant-switch-disabled
+        )
+    ) {
+      background: rgb(25, 209, 121, 100%);
+    }
   }
 }

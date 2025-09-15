@@ -15,14 +15,14 @@
   &-solid {
     &.btn-black {
       color: #fff;
-      background-color: rgba(25, 25, 25, 100%);
+      background-color: rgb(25, 25, 25, 100%);
 
       &:hover {
-        background-color: rgba(49, 49, 51, 100%);
+        background-color: rgb(49, 49, 51, 100%);
       }
 
       &:active {
-        background-color: rgba(18, 18, 18, 100%);
+        background-color: rgb(18, 18, 18, 100%);
       }
     }
   }

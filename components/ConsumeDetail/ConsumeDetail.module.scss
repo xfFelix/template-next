@@ -5,7 +5,7 @@
   overflow-y: auto;
 
   .title {
-    color: rgba(25, 25, 25, 100%);
+    color: rgb(25, 25, 25, 100%);
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
@@ -38,12 +38,12 @@
       border-radius: 4px;
 
       &.green {
-        color: rgba(5, 179, 96, 100%);
-        background-color: rgba(25, 209, 121, 12%);
+        color: rgb(5, 179, 96, 100%);
+        background-color: rgb(25, 209, 121, 12%);
       }
 
       &.gray {
-        color: rgba(120, 125, 133, 100%);
+        color: rgb(120, 125, 133, 100%);
         background-color: #eef0f4;
       }
 
@@ -76,22 +76,22 @@
 
     &.page-num {
       width: 38px;
-      color: rgba(25, 25, 25, 100%);
+      color: rgb(25, 25, 25, 100%);
       font-weight: 400;
       font-size: 14px;
-      background-color: rgba(245, 246, 250, 100%);
+      background-color: rgb(245, 246, 250, 100%);
       pointer-events: none;
     }
 
     &.operate {
-      color: rgba(25, 25, 25, 100%);
+      color: rgb(25, 25, 25, 100%);
 
       &.disabled {
-        color: rgba(0, 0, 0, 25%);
+        color: rgb(0, 0, 0, 25%);
       }
 
       &:not(.disabled):hover {
-        background-color: rgba(245, 246, 250, 100%);
+        background-color: rgb(245, 246, 250, 100%);
         cursor: pointer;
       }
     }

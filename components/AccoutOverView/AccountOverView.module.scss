@@ -14,12 +14,10 @@
 
 .table {
   :global(.ant-table-content) {
-
-      .ant-table-thead {
-        .ant-table-cell {
-          background: #f5f6faff;
-        }
+    .ant-table-thead {
+      .ant-table-cell {
+        background: #f5f6faff;
       }
-
+    }
   }
 }

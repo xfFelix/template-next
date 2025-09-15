@@ -3,7 +3,7 @@
 
   .title {
     margin-bottom: 32px;
-    color: rgba(29, 33, 41, 100%);
+    color: rgb(29, 33, 41, 100%);
     font-weight: 600;
     font-size: 18px;
     font-family: 'PingFang SC';
@@ -18,7 +18,7 @@
 
     .extra {
       margin-top: 8px;
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 14px;
       font-family: 'PingFang SC';
@@ -61,12 +61,12 @@
     width: 140px;
     height: 96px;
     color: #000;
-    background: rgba(255, 255, 255, 100%);
-    border: 1px solid rgba(164, 172, 188, 30%);
+    background: rgb(255, 255, 255, 100%);
+    border: 1px solid rgb(164, 172, 188, 30%);
     border-radius: 8px;
 
     .desc {
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 13px;
       font-family: 'PingFang SC';
@@ -77,7 +77,7 @@
   .agreementCheckbox {
     display: flex;
     align-self: start;
-    color: rgba(120, 125, 133, 100%);
+    color: rgb(120, 125, 133, 100%);
     font-weight: 400;
     font-size: 12px;
     font-family: 'PingFang SC';
@@ -98,7 +98,7 @@
     width: 140px;
     height: 96px;
     overflow: hidden;
-    border: 1px solid rgba(164, 172, 188, 30%);
+    border: 1px solid rgb(164, 172, 188, 30%);
     border-radius: 8px;
 
     img {
@@ -137,7 +137,7 @@
     color: #000;
     font-weight: 500;
     font-size: 14px;
-    border-right: 1px solid rgba(164, 172, 188, 30%);
+    border-right: 1px solid rgb(164, 172, 188, 30%);
   }
 
   /* 整个滚动条 */
@@ -153,36 +153,32 @@
 
   /* 滚动条滑块 */
   ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 12%);
+    background: rgb(0, 0, 0, 12%);
     border-radius: 6px;
   }
 
+  :global(.check-tip-from-error) {
+    position: relative !important;
 
-    :global(.check-tip-from-error) {
-      position: relative !important;
-
-      .ant-form-item-explain-error {
-        position: absolute;
-        top: -3px;
-        left: 21%;
-        transform: translate(-50%, -50%);
-      }
+    .ant-form-item-explain-error {
+      position: absolute;
+      top: -3px;
+      left: 21%;
+      transform: translate(-50%, -50%);
     }
+  }
 
-    :global(.upload) {
-      :global(.ant-upload-list-item-container) {
-          width: 140px !important;
-          height: 96px !important;
-      }
+  :global(.upload) {
+    :global(.ant-upload-list-item-container) {
+      width: 140px !important;
+      height: 96px !important;
     }
+  }
 
-    :global(.legalPerson) {
-      :global(.ant-upload-list-item-container) {
-
-          width: 136px !important;
-          height: 94px !important;
-
-      }
+  :global(.legalPerson) {
+    :global(.ant-upload-list-item-container) {
+      width: 136px !important;
+      height: 94px !important;
     }
-
+  }
 }

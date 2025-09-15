@@ -17,7 +17,7 @@
   .btn-auth {
     color: #000;
     background: #fff;
-    border: 1px solid rgba(164, 172, 188, 30%);
+    border: 1px solid rgb(164, 172, 188, 30%);
   }
 
   .ant-form-item {
@@ -29,8 +29,7 @@
     line-height: 13px;
   }
 
-  :global(:where(.css-dev-only-do-not-override-qc9f89).ant-form-item
-      .ant-form-item-explain-error) {
-      margin-bottom: 8px;
+  :global(:where(.css-dev-only-do-not-override-qc9f89).ant-form-item .ant-form-item-explain-error) {
+    margin-bottom: 8px;
   }
 }

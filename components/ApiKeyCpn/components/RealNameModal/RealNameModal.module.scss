@@ -7,15 +7,11 @@
   .tipBox {
     height: 130px;
     padding: 0 24px;
-    background: linear-gradient(
-      180deg,
-      rgba(213, 240, 255, 100%) 0%,
-      rgba(255, 255, 255, 100%) 100%
-    );
+    background: linear-gradient(180deg, rgb(213, 240, 255, 100%) 0%, rgb(255, 255, 255, 100%) 100%);
 
     .title {
       padding: 40px 0 12px;
-      color: rgba(36, 37, 38, 100%);
+      color: rgb(36, 37, 38, 100%);
       font-weight: 600;
       font-size: 20px;
       font-family: 'PingFang SC';
@@ -23,14 +19,14 @@
     }
 
     .content {
-      color: rgba(120, 125, 133, 100%);
+      color: rgb(120, 125, 133, 100%);
       font-weight: 400;
       font-size: 14px;
       font-family: 'PingFang SC';
       line-height: 22px;
 
       .desc {
-        color: rgba(25, 25, 25, 100%);
+        color: rgb(25, 25, 25, 100%);
       }
     }
   }
@@ -64,7 +60,7 @@
       }
 
       .title {
-        color: rgba(25, 25, 25, 100%);
+        color: rgb(25, 25, 25, 100%);
         font-weight: 600;
         font-size: 16px;
         font-family: 'PingFang SC';
@@ -73,7 +69,7 @@
 
       .desc {
         margin-top: 12px;
-        color: rgba(99, 102, 109, 100%);
+        color: rgb(99, 102, 109, 100%);
         font-weight: 400;
         font-size: 12px;
         font-family: 'PingFang SC';
