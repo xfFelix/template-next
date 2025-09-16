@@ -145,7 +145,8 @@ const eslintConfig = [
         'allowNew': false,
         'allowLiteral': false,
         'allowObject': true
-      }]
+      }],
+      '@typescript-eslint/no-empty-object-type': 'off'
     }
   }),
   {
