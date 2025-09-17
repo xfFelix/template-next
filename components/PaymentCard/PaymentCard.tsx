@@ -46,7 +46,9 @@ function PaymentCard(props: PaymentCardProps) {
   const [loading, setLoading] = useState(false);
 
   // 支付订单详情
-  const [order, setOrder, getOrder] = useGetState<OrderDetail | undefined>(undefined);
+  const [order, setOrder, getOrder] = useGetState<OrderDetail | undefined>(
+    undefined
+  );
 
   const currentOrderKey = useRef(0);
 
@@ -61,7 +63,9 @@ function PaymentCard(props: PaymentCardProps) {
     if (type === PayType.WE_CHATE) {
       setCodeUrl(data?.charge?.nativeData.code_url);
     } else {
-      const url = URL.createObjectURL(new Blob([data.charge.nativeData.data], { type: 'text/html' }));
+      const url = URL.createObjectURL(
+        new Blob([data.charge.nativeData.data], { type: 'text/html' })
+      );
       setCodeUrl(url);
     }
   };
@@ -170,9 +174,20 @@ function PaymentCard(props: PaymentCardProps) {
           })}
         >
           {tab === PayType.WE_CHATE ? (
-            <QRCodeSVG value={codeUrl} className={Style['code-url']} size={qrcodeSize} />
+            <QRCodeSVG
+              value={codeUrl}
+              className={Style['code-url']}
+              size={qrcodeSize}
+            />
           ) : (
-            <iframe scrolling="no" className={Style.iframe} title="二维码" src={codeUrl} width={qrcodeSize} height={qrcodeSize} />
+            <iframe
+              scrolling="no"
+              className={Style.iframe}
+              title="二维码"
+              src={codeUrl}
+              width={qrcodeSize}
+              height={qrcodeSize}
+            />
           )}
 
           <div className={Style['expired-box']} onClick={() => initOrder(tab)}>
@@ -181,7 +196,11 @@ function PaymentCard(props: PaymentCardProps) {
           </div>
 
           <div className={Style.spin}>
-            <Image src={CommonImageAssets.LOADING_ICON} className={Style.icon} alt="" />
+            <Image
+              src={CommonImageAssets.LOADING_ICON}
+              className={Style.icon}
+              alt=""
+            />
           </div>
           {/* <Spin spinning className={Style.spin} /> */}
         </div>
@@ -191,10 +210,16 @@ function PaymentCard(props: PaymentCardProps) {
             <span className={Style.icon}>¥</span>
             <span className={Style.num}>{translateAmount(order?.amount)}</span>
           </div>
-          <div className={Style.tip}>请使用{tab === PayType.WE_CHATE ? '微信' : '支付宝'}扫码支付</div>
+          <div className={Style.tip}>
+            请使用{tab === PayType.WE_CHATE ? '微信' : '支付宝'}扫码支付
+          </div>
           <div className={Style.agreement}>
             确认支付即代表同意本平台
-            <CustomButton type={ButtonType.TEXT} className={Style.link} onClick={handleLink}>
+            <CustomButton
+              type={ButtonType.TEXT}
+              className={Style.link}
+              onClick={handleLink}
+            >
               《充值协议》
             </CustomButton>
           </div>
